@@ -79,12 +79,15 @@ compliance-audit-tool/
 
 ## 🚀 Future Updates
 
-Planned improvements:
--	Add toy use cases (examples directory) for demonstration
--	Expand checks to consent, policies, access logs, and transfers
--	Generate AWS architecture diagrams per pipeline
--	Add unit tests for each compliance module
--	Provide sample datasets with fairness checks
+Planned improvements and extensions to the audit tool include:
+-	Expanded ML Use Cases – Support for a broader range of machine learning pipelines beyond toy examples and classification tasks.
+-	Extended GDPR Coverage – Deeper checks across multiple GDPR articles and compliance dimensions (consent, policies, access logs, and transfers).
+-	Access Control & Policy Auditing – Verification of user permissions, IAM roles, and policy enforcement.
+-	Data Collection & Consent Validation – Ensuring proper consent mechanisms and lawful basis for data use.
+-	Risk Analysis – Identifying and quantifying compliance and ethical risks.
+-	Support for NLP Models – Extending coverage beyond structured data classification to natural language processing use cases.
+-	LLM-based Assistant – Adding a layer for generating summaries, remediation suggestions, and compliance insights using large language models.
+-	Testing & Types – Comprehensive unit tests, type checking, and improved developer experience.
 -	Improve dashboard with real-time monitoring and alerts
 
 
