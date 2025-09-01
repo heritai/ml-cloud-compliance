@@ -28,24 +28,24 @@ This tool demonstrates how **compliance checks** can be integrated into the ML p
 ## 🔎 Compliance Checks Implemented
 
 ### 1. **Data Residency**  
-- **Why it matters:** GDPR restricts cross-border data transfers (Art. 44–46). Data must stay within approved regions (e.g., EU).  
-- **How it’s checked:** The tool verifies S3 bucket locations and ensures data is encrypted.  
+- GDPR restricts cross-border data transfers (Art. 44–46). Data must stay within approved regions (e.g., EU).  
+- The tool verifies S3 bucket locations and ensures data is encrypted.  
 
 ### 2. **Traceability & Logging**  
-- **Why it matters:** GDPR (Art. 5(2), 30) requires **accountability and auditability**.  
-- **How it’s checked:** The tool logs which models are linked to which datasets, buckets, and training jobs. This allows reconstruction of the pipeline for auditing.  
+- GDPR (Art. 5(2), 30) requires **accountability and auditability**.  
+- The tool logs which models are linked to which datasets, buckets, and training jobs. This allows reconstruction of the pipeline for auditing.  
 
 ### 3. **Fairness & Bias Metrics**  
-- **Why it matters:** GDPR (Art. 5(1)(a), Recital 71) requires fairness and non-discrimination in automated decisions.  
-- **How it’s checked:** Using AWS Clarify metrics:  
+- GDPR (Art. 5(1)(a), Recital 71) requires fairness and non-discrimination in automated decisions.  
+- Checked using AWS Clarify metrics:  
   - **Accuracy Difference (AD):** Difference in accuracy between groups  
   - **Difference in Positive Proportions in Predicted Labels (DPPL):** Measures group-wise disparities  
   - **Difference in Acceptance Rates (DAR):** Compares acceptance ratios  
   - **Treatment Equality (TE):** Ratio of false negatives to false positives across groups  
 
 ### 4. **Explainability**  
-- **Why it matters:** GDPR (Art. 22, Recital 71) gives users the right to meaningful explanations of automated decisions.  
-- **How it’s checked:** The tool integrates **SHAP (SHapley Additive exPlanations)** to explain model predictions at both global and local levels.  
+- GDPR (Art. 22, Recital 71) gives users the right to meaningful explanations of automated decisions.  
+- The tool integrates **SHAP (SHapley Additive exPlanations)** to explain model predictions at both global and local levels.  
 
 
 ## ⚙️ Usage
